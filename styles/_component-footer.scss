@@ -1,0 +1,15 @@
+.tm-footer {
+  // height: 84px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+  &__content {
+    width: 100%;
+    padding: 32px;
+    background-color: #000;
+    
+    color: #f5f5f5;
+  }
+
+}

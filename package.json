@@ -1,0 +1,13 @@
+{
+  "name": "venom",
+  "activationEvents": [],
+  "scripts": {
+    "start": "node ./bin/www",
+    "scss": "node-sass — watch styles/main.scss -o css"
+  },
+  "dependencies": {
+    "express": "~4.16.0",
+    "express-favicon": "^2.0.1",
+    "node-sass": "^5.0.0"
+  }
+}
