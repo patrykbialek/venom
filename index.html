@@ -20,30 +20,130 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/main.css">
-
 </head>
 
 <body class="tm-main">
-  
+
   <nav class="tm-header">
-    Header
+    <!-- <figure class="tm-header__logo"> -->
+    <div class="tm-header__logo">
+      <svg viewBox="0 0 66 32" id="logo">
+        <title>LogoT-Mobile</title>
+        <path fill="#e20074" d="M19.733 21.156v-6.4h6.4v6.4z"></path>
+        <path fill="#e20074" d="M0 21.156v-6.4h6.4v6.4z"></path>
+        <path fill="#e20074"
+          d="M25.92 0h-25.6l-0.32 11.289 1.707 0.302q0.48-4.987 2.613-7.413c1.511-1.689 3.573-2.56 6.24-2.649v23.627c0 2.062-0.284 3.396-0.889 4.018-0.516 0.533-1.369 0.853-2.596 0.978-0.356 0.036-0.978 0.053-1.849 0.053v1.796h15.804v-1.813c-0.871 0-1.493-0.018-1.849-0.053-1.227-0.124-2.080-0.444-2.596-0.978-0.604-0.622-0.889-1.956-0.889-4.018v-23.609c2.667 0.071 4.747 0.96 6.24 2.649 1.422 1.618 2.311 4.071 2.613 7.413l1.707-0.302z">
+        </path>
+        <path fill="#e20074" d="M39.467 21.156v-6.4h6.4v6.4z"></path>
+        <path fill="#e20074" d="M59.2 21.156v-6.4h6.4v6.4z"></path>
+      </svg>
+    </div>
+    <!-- </figure> -->
+    <div class="tm-header__app-name">
+      MÓJ T-MOBILE
+    </div>
   </nav>
-  
+
   <main class="tm-body">
-    <section>
-      <header>
-        <h1>Welcome</h1>
-      </header>
+    <section class="tm-watch-info">
+      <div class="tm-watch-info__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M0 0h24v24H0z" fill="none" opacity=".1" />
+          <path
+            d="M20 12c0-2.54-1.19-4.81-3.04-6.27L16 0H8l-.95 5.73C5.19 7.19 4 9.45 4 12s1.19 4.81 3.05 6.27L8 24h8l.96-5.73C18.81 16.81 20 14.54 20 12zM6 12c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z" />
+        </svg>
+      </div>
+      <div class="tm-watch-info__details">
+        <div class="tm-watch-info__label">Nazwa sparowanego urządzenia</div>
+        <div class="tm-watch-info__name">Apple Watch 3</div>
+      </div>
+    </section>
+    <section class="tm-phone-info">
+      <div class="tm-phone-info__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z" />
+        </svg>
+      </div>
+      <div class="tm-phone-info__details">
+        <div class="tm-phone-info__label">Numer telefonu</div>
+        <div class="tm-phone-info__name">602 204 906</div>
+      </div>
+      <div class="tm-phone-info__more">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="#e30074" />
+        </svg>
+      </div>
+    </section>
+    <section class="tm-multisim-info">
+      <div class="tm-multisim-info__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z" />
+        </svg>
+      </div>
+      <div class="tm-multisim-info__details">
+        <div class="tm-multisim-info__label">MultiSIM 1</div>
+      </div>
+      <div class="tm-multisim-info__status">
+        W realizacji
+      </div>
+      <div class="tm-multisim-info__more">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#e30074" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="tm-message tm-message--success">
+      <div class="tm-message__icon"></div>
+      <div class="tm-message__content">
+        <div class="tm-message__title">Włączyłeś usługę MultiSIM</div>
+        <div class="tm-message__text">Twoja karta jest wygenerowana. Usługa MultiSIM jest w trakcie realizacji. Po jej
+          aktywacji w naszych systemach będziesz mógł z niej skorzystać. Na kartę MulitSIM otrzymasz sms kiedy zostanie
+          aktywowana. Miłego korzystania.</div>
+      </div>
+    </section>
+
+    <section class="tm-message tm-message--info">
+      <div class="tm-message__icon"></div>
+      <div class="tm-message__content">
+        <div class="tm-message__title">Skontaktuj się z opiekunem</div>
+        <div class="tm-message__text">Aby zarządzać usługą MultiSIM prosimy o skorzystanie z eCare lub kontakt z Twoim
+          adminstratorem bądź opiekunem.</div>
+      </div>
+    </section>
+
+    <section class="tm-message tm-message--warning">
+      <div class="tm-message__icon"></div>
+      <div class="tm-message__content">
+        <div class="tm-message__title">Maksymalna liczba MultiSIM</div>
+        <div class="tm-message__text">Posiadasz maksymalną liczbę usług MultiSIM. Aby aktywować MulitSIM musisz
+          zdeinstalować jedną z aktywnych usług. W tym celu skontaktuj się z konsultantem pod numerem 602 900 000.</div>
+      </div>
+    </section>
+
+    <section class="tm-action" id="actionContainer">
+      <button class="tm-action__button tm-action__button--logut" id="logoutButton">
+        Wyloguj
+      </button>
+      <div class="tm-action__message" id="actionMessage">
+        Możesz się bezpiecznie wylogować.
+      </div>
     </section>
   </main>
-    
-    <footer class="tm-footer">
-      <section class="tm-footer__content">
-        <div>&copy; T-Mobile Polska S.A. Wszystkie prawa zastrzeżone</div>
-      </section>
-    </footer>
-    
-  <script src="index.js"></script>
+
+  <footer class="tm-footer">
+    <section class="tm-footer__content">
+      <div>&copy; 2021 T-Mobile Polska S.A. Wszystkie prawa zastrzeżone</div>
+    </section>
+  </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
