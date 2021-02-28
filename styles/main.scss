@@ -1,10 +1,11 @@
 @import "_component-header";
 @import "_component-body";
 @import "_component-footer";
+@import "_utilities-fonts";
 
 html,
 body {
-  font-family: "Lato", Courier, monospace;
+  font-family: "tele-groteskultregular", 'Lato', Courier, monospace;
 }
 
 .tm-main {
@@ -13,5 +14,4 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  // height: 100vh;
 }

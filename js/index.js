@@ -15,6 +15,8 @@ const logoutButtonContent = {
 
 logoutButton.addEventListener("click", logout);
 
+setCopyrightYear();
+
 function logout() {
   logoutButton.innerHTML = logoutButtonContent.spinner;
   actionMessage.innerHTML = message.logounInProgress;
@@ -27,4 +29,9 @@ function logoutCall() {
     logoutButton.innerHTML = logoutButtonContent.logout;
     actionMessage.innerHTML = message.logoutBefore;
   }, 3000);
+}
+
+function setCopyrightYear() {
+  const yearElement = document.querySelector("#year");
+  yearElement.innerHTML = `${new Date().getFullYear()}`;
 }

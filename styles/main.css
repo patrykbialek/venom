@@ -49,9 +49,10 @@
 }
 
 .tm-header__app-name {
-  padding-right: 16px;
   color: #e30074;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-right: 16px;
 }
 
 .tm-body {
@@ -97,15 +98,16 @@
 .tm-watch-info__label,
 .tm-phone-info__label,
 .tm-multisim-info__label {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
   color: #424242;
 }
 
 .tm-watch-info__name,
 .tm-phone-info__name,
 .tm-multisim-info__name {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
   color: #757575;
 }
 
@@ -134,7 +136,7 @@
 }
 
 .tm-watch-info__label {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .tm-phone-info {
@@ -167,9 +169,9 @@
 }
 
 .tm-multisim-info__status {
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #ffa726;
-  padding: 0 12px;
+  padding: 0 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,10 +181,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 6px 0;
+  margin: 10px 0;
   color: #757575;
-  font-weight: bold;
+  font-weight: 500;
   margin-right: 4px;
+  font-size: 14px;
 }
 
 .tm-multisim-info__more {
@@ -249,7 +252,7 @@
 }
 
 .tm-message__title {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -273,11 +276,11 @@
 
 .tm-message--info {
   background-color: #e1f5fe;
-  border: solid 1px #03A9F4;
+  border: solid 1px #03a9f4;
 }
 
 .tm-message--info .tm-message__title {
-  color: #03A9F4;
+  color: #03a9f4;
 }
 
 .tm-message--info .tm-message__icon::before {
@@ -285,12 +288,12 @@
 }
 
 .tm-message--warning {
-  background-color: #F3E5F5;
-  border: solid 1px #9C27B0;
+  background-color: #f3e5f5;
+  border: solid 1px #9c27b0;
 }
 
 .tm-message--warning .tm-message__title {
-  color: #9C27B0;
+  color: #9c27b0;
 }
 
 .tm-message--warning .tm-message__icon::before {
@@ -299,7 +302,7 @@
 
 .tm-action {
   margin: 16px;
-  padding: 16px 24px;
+  padding: 16px 16px 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,7 +325,7 @@
   border: none;
   background-color: transparent;
   color: #e30074;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   padding: 12px;
   margin: 0 -12px 0 0;
@@ -381,25 +384,90 @@
 }
 
 .tm-footer {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .tm-footer__content {
+  background-color: #262626;
   padding: 32px 16px;
-  background-color: #000;
-  color: #e0e0e0;
+  color: #A3A3A3;
+  font-size: 14px;
   line-height: 1.5;
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: bolder;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-fett-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-fett-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-halb-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: medium;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-halb-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-norm-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-norm-webfont.woff2") format("woff2");
 }
 
 html,
 body {
-  font-family: "Lato", Courier, monospace;
+  font-family: "tele-groteskultregular", 'Lato', Courier, monospace;
 }
 
 .tm-main {
