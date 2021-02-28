@@ -1,7 +1,16 @@
 .tm-header {
-  padding: 16px;
   background-color: #fff;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tm-header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +24,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 16px;
+  width: 100%;
 }
 
 .tm-header__logo {
@@ -379,7 +390,6 @@
 }
 
 .tm-footer__content {
-  width: 100%;
   padding: 32px 16px;
   background-color: #000;
   color: #e0e0e0;
@@ -392,7 +402,7 @@ body {
 }
 
 .tm-main {
-  max-width: 600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,6 +414,5 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
