@@ -1,0 +1,52 @@
+$border-color: $color-primary;
+
+.tm-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  margin: 16px;
+  padding: 16px 16px 16px 0;
+
+  &__button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: $color-primary;
+    font-weight: 600;
+
+    font-size: 16px;
+
+    padding: 12px;
+    margin: 0 -12px 0 0;
+
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 0;
+      outline: 0;
+    }
+  }
+
+  &__spinner {
+    border: 3px solid;
+    border-color: $border-color $border-color transparent $border-color;
+    border-radius: 100%;
+    
+    width: 20px;
+    height: 20px;
+
+    animation: spin 750ms linear infinite;
+  }
+
+  &__message {
+    color: $color-secondary-text;
+    margin-top: 8px;
+  }
+}

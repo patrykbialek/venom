@@ -1,0 +1,40 @@
+.tm-device-info,
+.tm-phone-info,
+.tm-multisim-item {
+  display: flex;
+  flex-direction: row;
+
+  padding: 24px 28px;
+
+  background-color: #fff;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #424242;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-primary-text;
+  }
+
+  &__icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $color-secondary-background;
+    margin-right: 16px;
+  }
+}

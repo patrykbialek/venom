@@ -1,7 +1,18 @@
+@import "_utilities-animations";
+@import "_utilities-colors";
+@import "_utilities-fonts";
+
 @import "_component-header";
 @import "_component-body";
 @import "_component-footer";
-@import "_utilities-fonts";
+
+@import "_component-action";
+@import "_component-common";
+@import "_component-device";
+@import "_component-message";
+@import "_component-multisim";
+@import "_component-phone";
+@import "_component-sim-generation";
 
 html,
 body {

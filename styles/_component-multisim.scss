@@ -1,0 +1,173 @@
+.tm-multisim {
+  &-container {
+    margin: 8px 0;
+  }
+
+  &-item {
+    background-color: transparent;
+    margin: 0 16px;
+    border-radius: 12px;
+    padding: 8px 12px;
+
+    &__status {
+      border-radius: 6px;
+      padding: 0 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      font-weight: 500;
+      margin-right: 4px;
+      font-size: 14px;
+
+      &--pending {
+        background-color: #ffa726;
+        color: $color-secondary-text;
+      }
+      &--active {
+        background-color: #8bc34a;
+        color: #fafafa;
+      }
+    }
+    &__more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-info {
+    h1,
+    h2 {
+      color: #424242;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    background-color: #fff;
+    border-radius: 12px;
+
+    margin: 16px 16px 0 16px;
+    padding: 16px 12px;
+
+    p {
+      line-height: 1.5;
+    }
+
+    &__main {
+      margin-bottom: 24px;
+    }
+
+    &__hint {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 40px;
+      align-items: flex-start;
+
+      margin: 24px 0;
+
+      position: relative;
+
+      &:before {
+        content: "";
+        background-image: url("../images/info-outline-24px.svg");
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 12px;
+    }
+    &__subtitle {
+      margin-bottom: 12px;
+    }
+    &__description {
+      margin-bottom: 24px;
+      p {
+        margin: 0 0 4px 0;
+      }
+    }
+    &__accept-regulation {
+      margin-bottom: 18px;
+    }
+    &__accept-regulation,
+    &__action {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__cancel-button,
+    &__confirm-button {
+      appearance: none;
+      border: none;
+
+      font-size: 16px;
+
+      padding: 12px;
+      margin: 0;
+
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border: 0;
+        outline: 0;
+      }
+    }
+    &__cancel-button {
+      background-color: transparent;
+      color: $color-primary;
+      font-weight: 600;
+    }
+    &__confirm-button {
+      background-color: $color-primary;
+      color: #fafafa;
+      font-weight: 400;
+      padding: 12px 18px;
+      margin-left: 18px;
+    }
+    &__price {
+      font-weight: bold;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  position: relative;
+  z-index: 1;
+  margin-left: 12px;
+  &:after {
+    content: '';
+    background-image: url("../images/check_box-unchecked-24px.svg");
+    position: absolute;
+    top: -6px;
+    left: -5px;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    z-index: 10;
+  }
+  &:checked:after {
+    background-image: url("../images/check_box-checked-24px.svg");
+  }
+}
+
+.tm-btn-link {
+  color: $color-primary;
+  margin: 0 4px;
+  font-weight: 500;
+}

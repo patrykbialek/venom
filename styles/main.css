@@ -1,3 +1,89 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: bolder;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-fett-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-fett-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-halb-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: medium;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-halb-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-norm-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "tele-groteskultregular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/tele-grotesk-norm-webfont.woff2") format("woff2");
+}
+
 .tm-header {
   background-color: #fff;
   width: 100%;
@@ -33,11 +119,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 0;
   padding-left: 16px;
 }
@@ -64,9 +150,89 @@
   color: #616161;
 }
 
-.tm-watch-info,
+.tm-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.tm-footer__content {
+  background-color: #262626;
+  padding: 32px 16px;
+  width: 100%;
+  color: #A3A3A3;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tm-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 16px;
+  padding: 16px 16px 16px 0;
+}
+
+.tm-action__button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: transparent;
+  color: #e30074;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px;
+  margin: 0 -12px 0 0;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tm-action__button:hover, .tm-action__button:active, .tm-action__button:focus {
+  border: 0;
+  outline: 0;
+}
+
+.tm-action__spinner {
+  border: 3px solid;
+  border-color: #e30074 #e30074 transparent #e30074;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 750ms linear infinite;
+          animation: spin 750ms linear infinite;
+}
+
+.tm-action__message {
+  color: #757575;
+  margin-top: 8px;
+}
+
+.tm-device-info,
 .tm-phone-info,
-.tm-multisim-info {
+.tm-multisim-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,9 +244,9 @@
   background-color: #fff;
 }
 
-.tm-watch-info__details,
+.tm-device-info__details,
 .tm-phone-info__details,
-.tm-multisim-info__details {
+.tm-multisim-item__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,25 +262,25 @@
           flex: 1;
 }
 
-.tm-watch-info__label,
+.tm-device-info__label,
 .tm-phone-info__label,
-.tm-multisim-info__label {
+.tm-multisim-item__label {
   font-size: 16px;
   font-weight: 600;
   color: #424242;
 }
 
-.tm-watch-info__name,
+.tm-device-info__name,
 .tm-phone-info__name,
-.tm-multisim-info__name {
+.tm-multisim-item__name {
   font-size: 16px;
   font-weight: 500;
   color: #616161;
 }
 
-.tm-watch-info__icon,
+.tm-device-info__icon,
 .tm-phone-info__icon,
-.tm-multisim-info__icon {
+.tm-multisim-item__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,78 +293,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  background: #f5f5f5;
+  background: #fafafa;
   margin-right: 16px;
 }
 
-.tm-watch-info {
+.tm-device-info {
   -webkit-box-shadow: 0 0.95vw 2.5vw 0 rgba(6, 0, 35, 0.05) !important;
           box-shadow: 0 0.95vw 2.5vw 0 rgba(6, 0, 35, 0.05) !important;
 }
 
-.tm-watch-info__label {
+.tm-device-info__label {
   margin-bottom: 6px;
-}
-
-.tm-phone-info {
-  margin: 16px 16px 0 16px;
-  border-radius: 12px;
-  padding: 16px 12px;
-}
-
-.tm-phone-info__label {
-  margin-bottom: 8px;
-}
-
-.tm-phone-info__more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.tm-multisim-info {
-  background-color: transparent;
-  margin: 0 16px 16px 16px;
-  border-radius: 12px;
-  padding: 16px 12px;
-}
-
-.tm-multisim-info__status {
-  border-radius: 6px;
-  background-color: #ffa726;
-  padding: 0 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0;
-  color: #757575;
-  font-weight: 500;
-  margin-right: 4px;
-  font-size: 14px;
-}
-
-.tm-multisim-info__more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .tm-message {
@@ -301,35 +406,159 @@
   background-image: url("../images/warning-24px.svg");
 }
 
-.tm-action {
-  margin: 16px;
-  padding: 16px 16px 16px 0;
+.tm-multisim-container {
+  margin: 8px 0;
+}
+
+.tm-multisim-item {
+  background-color: transparent;
+  margin: 0 16px;
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+
+.tm-multisim-item__status {
+  border-radius: 6px;
+  padding: 0 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  font-weight: 500;
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.tm-multisim-item__status--pending {
+  background-color: #ffa726;
+  color: #757575;
+}
+
+.tm-multisim-item__status--active {
+  background-color: #8bc34a;
+  color: #fafafa;
+}
+
+.tm-multisim-item__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tm-multisim-info {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 16px 16px 0 16px;
+  padding: 16px 12px;
+}
+
+.tm-multisim-info h1,
+.tm-multisim-info h2 {
+  color: #424242;
+}
+
+.tm-multisim-info h1 {
+  font-size: 24px;
+}
+
+.tm-multisim-info h2 {
+  font-size: 20px;
+}
+
+.tm-multisim-info p {
+  line-height: 1.5;
+}
+
+.tm-multisim-info__main {
+  margin-bottom: 24px;
+}
+
+.tm-multisim-info__hint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 24px 0;
+  position: relative;
+}
+
+.tm-multisim-info__hint:before {
+  content: "";
+  background-image: url("../images/info-outline-24px.svg");
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.tm-multisim-info__title {
+  margin-bottom: 12px;
+}
+
+.tm-multisim-info__subtitle {
+  margin-bottom: 12px;
+}
+
+.tm-multisim-info__description {
+  margin-bottom: 24px;
+}
+
+.tm-multisim-info__description p {
+  margin: 0 0 4px 0;
+}
+
+.tm-multisim-info__accept-regulation {
+  margin-bottom: 18px;
+}
+
+.tm-multisim-info__accept-regulation, .tm-multisim-info__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
-.tm-action__button {
+.tm-multisim-info__cancel-button, .tm-multisim-info__confirm-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: none;
-  background-color: transparent;
-  color: #e30074;
-  font-weight: 600;
   font-size: 16px;
   padding: 12px;
-  margin: 0 -12px 0 0;
+  margin: 0;
   height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,128 +571,108 @@
           align-items: center;
 }
 
-.tm-action__button:hover, .tm-action__button:active, .tm-action__button:focus {
+.tm-multisim-info__cancel-button:hover, .tm-multisim-info__cancel-button:active, .tm-multisim-info__cancel-button:focus, .tm-multisim-info__confirm-button:hover, .tm-multisim-info__confirm-button:active, .tm-multisim-info__confirm-button:focus {
   border: 0;
   outline: 0;
 }
 
-.tm-action__spinner {
-  width: 20px;
-  height: 20px;
+.tm-multisim-info__cancel-button {
+  background-color: transparent;
+  color: #e30074;
+  font-weight: 600;
+}
+
+.tm-multisim-info__confirm-button {
+  background-color: #e30074;
+  color: #fafafa;
+  font-weight: 400;
+  padding: 12px 18px;
+  margin-left: 18px;
+}
+
+.tm-multisim-info__price {
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  z-index: 1;
+  margin-left: 12px;
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  background-image: url("../images/check_box-unchecked-24px.svg");
+  position: absolute;
+  top: -6px;
+  left: -5px;
+  height: 24px;
+  width: 24px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+input[type="checkbox"]:checked:after {
+  background-image: url("../images/check_box-checked-24px.svg");
+}
+
+.tm-btn-link {
+  color: #e30074;
+  margin: 0 4px;
+  font-weight: 500;
+}
+
+.tm-phone-info {
+  margin: 16px 16px 0 16px;
+  border-radius: 12px;
+  padding: 16px 12px;
+}
+
+.tm-phone-info__label {
+  margin-bottom: 8px;
+}
+
+.tm-phone-info__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tm-sim-generation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 0;
+}
+
+.tm-sim-generation__spinner {
+  width: 64px;
+  height: 64px;
   border-radius: 100%;
-  border: 3px solid;
+  border: 6px solid;
   border-color: #e30074 #e30074 transparent #e30074;
   -webkit-animation: spin 750ms linear infinite;
           animation: spin 750ms linear infinite;
 }
 
-.tm-action__message {
-  color: #757575;
-  margin-top: 8px;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.tm-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.tm-footer__content {
-  background-color: #262626;
-  padding: 32px 16px;
-  color: #A3A3A3;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: bolder;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-fett-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-fett-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-halb-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: medium;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-halb-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-norm-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "tele-groteskultregular";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url("../fonts/tele-grotesk-norm-webfont.woff2") format("woff2");
+.tm-sim-generation__message {
+  margin-top: 32px;
 }
 
 html,

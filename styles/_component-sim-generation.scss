@@ -1,0 +1,23 @@
+$border-color: $color-primary;
+
+.tm-sim-generation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 32px 0;
+
+  &__spinner {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    border: 6px solid;
+    border-color: $border-color $border-color transparent $border-color;
+
+    animation: spin 750ms linear infinite;
+  }
+  &__message {
+    margin-top: 32px;
+  }
+}

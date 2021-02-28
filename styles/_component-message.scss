@@ -1,0 +1,79 @@
+.tm-message {
+  margin: 16px;
+  padding: 16px 24px;
+
+  display: flex;
+  flex-direction: row;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 48px;
+    align-items: flex-start;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__content {
+    padding: 0;
+  }
+  &__title {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  &__text {
+    color: $color-primary-text;
+    line-height: 1.5;
+  }
+
+  &--success {
+    background-color: $color-success-background;
+    border: solid 1px $color-success-border;
+
+    .tm-message__title {
+      color: $color-success-text;
+    }
+
+    .tm-message__icon::before {
+      background-image: url("../images/success-24px.svg");
+    }
+  }
+
+  &--info {
+    background-color: $color-info-background;
+    border: solid 1px $color-info-border;
+
+    .tm-message__title {
+      color: $color-info-text;
+    }
+
+    .tm-message__icon::before {
+      background-image: url("../images/info-24px.svg");
+    }
+  }
+
+  &--warning {
+    background-color: $color-warning-background;
+    border: solid 1px $color-warning-border;
+
+    .tm-message__title {
+      color: $color-warning-text;
+    }
+
+    .tm-message__icon::before {
+      background-image: url("../images/warning-24px.svg");
+    }
+  }
+}
