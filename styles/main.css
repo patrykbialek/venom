@@ -51,7 +51,7 @@
 .tm-header__app-name {
   color: #e30074;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 800;
   padding-right: 16px;
 }
 
@@ -404,7 +404,7 @@
 @font-face {
   font-family: "tele-groteskultregular";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-display: swap;
   src: url("../fonts/tele-grotesk-ultr-webfont.woff2") format("woff2");
 }
