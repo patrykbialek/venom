@@ -120,7 +120,8 @@
               Usługa MultiSIM
             </h1>
           </header>
-          <p class="tm-multisim-info__main">Dzięki usłudze MultiSIM możesz korzystać z jednego numeru telefonu na wielu urządzeniach jednocześnie.</p>
+          <p class="tm-multisim-info__main">Dzięki usłudze MultiSIM możesz korzystać z jednego numeru telefonu na wielu
+            urządzeniach jednocześnie.</p>
           <p class="tm-multisim-info__hint">Włączenie usługi MultiSIM spowoduje automatyczne włączenie usługi VoLTE i
             wyłączenie usług "Kto tam?" oraz "Już jestem".</p>
         </section>
@@ -137,11 +138,13 @@
         </section>
         <section>
           <label class="tm-multisim-info__accept-regulation" for="">
-            Akceptuję <a class="tm-btn-link">regulamin</a> usługi MultiSIM<input id="acceptRegulation" type="checkbox">
+            Akceptuję <a class="tm-button tm-button--link">regulamin</a> usługi MultiSIM<input id="acceptRegulation"
+              type="checkbox">
           </label>
           <div class="tm-multisim-info__action">
-            <button class="tm-multisim-info__cancel-button" id="cancel">Rezygnuję</button>
-            <button class="tm-multisim-info__confirm-button" id="confirm">Włącz usługę</button>
+            <button class="tm-button tm-button--link tm-multisim-info__cancel-button" id="cancel">Rezygnuję</button>
+            <button class="tm-button tm-button--primary tm-multisim-info__confirm-button" id="confirm" disabled>Włącz
+              usługę</button>
           </div>
         </section>
       </div>
@@ -188,6 +191,33 @@
       <div class="tm-sim-generation__spinner"></div>
       <div class="tm-sim-generation__message">Generujemy Twoją kartę MultiSIM</div>
     </section>
+
+    <section class="tm-signup">
+      <header class="tm-signup__header">
+        <h1>
+          Zaloguj się
+        </h1>
+      </header>
+      <p class="tm-signup__hint">Zaloguj się, żeby aktywować usługę MulitSIM</p>
+      <form action="" class="tm-signup__form">
+        <div class="tm-signup__form-phone-number">
+          <label for="">Twój numer:</label>
+          <strong>+48 602 204 906</strong>
+        </div>
+        <div class="tm-signup__form-password-input">
+          <input class="tm-input-text" type="password" placeholder="podaj hasło">
+          <a href="" class="tm-input-text-addon">
+            <img src="./images/remove_red_eye-24px.svg" alt="pokaż">
+          </a>
+        </div>
+        <div class="tm-signup__form-actions">
+          <button class="tm-button tm-button--primary">Zaloguj</button>
+          <p class="tm-reset-password">Nie pamiętasz hasła? <a href="" class="tm-button tm-button--link">Zrestuj hasło</a></p>
+          <p class="tm-register">Nie masz jeszcze konta? <a href="" class="tm-button tm-button--link">Zarejestruj się</a></p>
+        </div>
+      </form>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
   </main>
 
   <footer class="tm-footer">

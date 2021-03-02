@@ -1,0 +1,90 @@
+.tm-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__header,
+  &__hint {
+    width: 100%;
+  }
+
+  &__header {
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+      margin: 0;
+
+      color: #424242;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  &__hint {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &__form {
+    width: calc(100% - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+
+    &-phone-number {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 18px;
+
+      width: calc(100% - 24px);
+    }
+
+    &-password-input {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      position: relative;
+
+      margin-bottom: 36px;
+
+      .tm-input-text-addon {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 42px;
+        width: 48px;
+      }
+
+      input {
+        width: 100%;
+        height: 42px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-actions {
+      width: 100%;
+    }
+    .tm-button.tm-button--primary {
+      width: 100%;
+    }
+  }
+}
+
+.tm-reset-password,
+.tm-register {
+  .tm-button--link {
+    display: inline-block;
+  }
+}

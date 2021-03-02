@@ -230,6 +230,57 @@
   margin-top: 8px;
 }
 
+.tm-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px;
+  margin: 0 -12px 0 0;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tm-button:hover, .tm-button:active, .tm-button:focus {
+  border: 0;
+  outline: 0;
+}
+
+.tm-button--default {
+  color: #e30074;
+  background-color: transparent;
+}
+
+.tm-button--primary {
+  background-color: #e30074;
+  color: #fafafa;
+}
+
+.tm-button--primary[disabled] {
+  color: #fafafa;
+  background-color: #ccc;
+}
+
+.tm-button--link {
+  color: #e30074;
+  background-color: transparent;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 4px;
+  height: auto;
+  text-decoration: none;
+}
+
 .tm-device-info,
 .tm-phone-info,
 .tm-multisim-item {
@@ -304,6 +355,12 @@
 
 .tm-device-info__label {
   margin-bottom: 6px;
+}
+
+.tm-input-text {
+  border: none;
+  background-color: #ddd;
+  padding: 12px 12px;
 }
 
 .tm-message {
@@ -616,12 +673,6 @@ input[type="checkbox"]:checked:after {
   background-image: url("../images/check_box-checked-24px.svg");
 }
 
-.tm-btn-link {
-  color: #e30074;
-  margin: 0 4px;
-  font-weight: 500;
-}
-
 .tm-phone-info {
   margin: 16px 16px 0 16px;
   border-radius: 12px;
@@ -642,6 +693,124 @@ input[type="checkbox"]:checked:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tm-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tm-signup__header, .tm-signup__hint {
+  width: 100%;
+}
+
+.tm-signup__header h1,
+.tm-signup__header h2,
+.tm-signup__header h3 {
+  text-align: center;
+  margin: 0;
+  color: #424242;
+}
+
+.tm-signup__header h1 {
+  font-size: 24px;
+}
+
+.tm-signup__hint {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.tm-signup__form {
+  width: calc(100% - 64px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+
+.tm-signup__form-phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+  width: calc(100% - 24px);
+}
+
+.tm-signup__form-password-input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.tm-signup__form-password-input .tm-input-text-addon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 42px;
+  width: 48px;
+}
+
+.tm-signup__form-password-input input {
+  width: 100%;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tm-signup__form-actions {
+  width: 100%;
+}
+
+.tm-signup__form .tm-button.tm-button--primary {
+  width: 100%;
+}
+
+.tm-reset-password .tm-button--link,
+.tm-register .tm-button--link {
+  display: inline-block;
 }
 
 .tm-sim-generation {
